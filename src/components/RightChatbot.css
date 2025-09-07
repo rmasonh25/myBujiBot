@@ -1,8 +1,7 @@
-/* Floating bubble button (bottom-right) */
+/* Floating bubble button (bottom-left) */
 .mbb-bubble {
   position: fixed;
-  right: 16px;        /* moved from left → right */
-  left: auto;
+  left: 16px;
   bottom: 16px;
   width: 54px;
   height: 54px;
@@ -20,12 +19,11 @@
 .mbb-bubble:hover { transform: translateY(-1px); box-shadow: 0 10px 28px rgba(0,0,0,.22); }
 .mbb-bubble-open { opacity: .85; }
 
-/* Chat panel card (bottom-right) */
+/* Chat panel card */
 .mbb-panel {
   position: fixed;
-  right: 16px;        /* moved from left → right */
-  left: auto;
-  bottom: 80px;       /* sits above bubble */
+  left: 16px;
+  bottom: 80px;                   /* sits above bubble */
   width: 360px;
   max-width: calc(100vw - 32px);
   height: 520px;
@@ -73,8 +71,8 @@
   display: flex;
   margin: 6px 0;
 }
-.mbb-left { justify-content: flex-start; }  /* bot on left */
-.mbb-right { justify-content: flex-end; }   /* user on right */
+.mbb-left { justify-content: flex-start; }
+.mbb-right { justify-content: flex-end; }
 
 .mbb-bubble-msg {
   padding: 10px 12px;
